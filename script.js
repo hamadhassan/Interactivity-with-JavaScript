@@ -1,5 +1,7 @@
 /*alert("Hello World");*/
-/*prompt("Enter your name");*/
-/*document.write("<h1>Hello Word</h1>");*/
+var name=prompt("Enter your name");
+document.write(name);
+console.log(name)
+alert(name)
 /*document.getElementById('test').innerHTML = "Hello World";*/
 /*console.log("Hello World");*/
