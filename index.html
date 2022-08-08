@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
 </head>
 <body>
-    <h1 id="test">Tester</h1>
+    <h1 id="test">Interactivity wih JavaScript</h1>
+    <h2>Modify the DOM</h2>
+    <section>
+        <button onclick="first()">First</button>
+        <button onclick="second()">Second</button>
+        <div>
+            <p  class="first">This code should't change.</p>
+            <p  id="change" class="second">This will change.</p>
+            <p class="third">This should't change either</p>
+        </div>
+    </section>
+
 </body>
 </html>
