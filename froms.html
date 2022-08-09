@@ -24,11 +24,42 @@
             <label for="date">Date &nbsp;&nbsp;:</label>
             <input type="date" name="date" id="date">
             <br>
+            <p>Favorite Food</p>
+            <label ><input type="checkbox" name="checkbox" id="food" value="pizza">Pizza</label> <br>
+            <label ><input type="checkbox" name="checkbox" id="food" value="chips">Chips</label><br>
+            <label ><input type="checkbox" name="checkbox" id="food" value="honey">Honey</label>
+            <br>
+            <p>Select the gender</p>
+            <input type="radio" name="gender" value="male">Male <br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <br>
+            <p>Select the Food</p>
+            <input type="radio" name="food" value="pizza">Pizza <br>
+            <input checked="true" type="radio" name="food" value="chips">Chips <br>
+            <br>
+
             <label for="postalcode">Postal Code with pattern :</label>
             <input pattern="[0-9]{5}" required type="text" name="poastalcode" id="postalcode">
             <br>
             <button onclick="return-valpas()" type="submit">Submit</button>
         </form>
+        <form action="http://www.intro-webdesign.com" method = "GET">
+            <fieldset>
+                  <legend>Form Verification</legend>
+            <label for ="fName">First Name:</label>
+                  <input type = "text" name = "fName" id = "fName" required><br/>
+                  <label for = "lName">Last Name:</label>
+                  <input type = "text" name = "lName" id = "lName" required><br/>
+                  <label for = "yesNick">Nickname?:</label>
+                  <input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange= "nicknameFunction()"/>	<br/>
+                    
+            <div id = "nick">
+                        <label for = "nickname">Nickname:</label>
+                        <input type = "text" name = "nickname" id = "nickname"><br/>
+                  </div>
+      <input type = "submit" value = "Verify"/>
+     </fieldset>
+    </form>
     </section>
 </body>
 </html>
