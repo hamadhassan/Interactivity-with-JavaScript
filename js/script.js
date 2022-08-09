@@ -28,4 +28,9 @@ function myFunction(){
     fruits[fruits.length]=fruit;
     document.getElementById("fruits").innerHTML=fruits;
 }
-
+var grades=[12,12,12,12,12,12];
+var sum=0;
+for(j=0;j<grades.length;j++){
+    sum+=grades[j];
+}
+document.write(sum/grades.length);
