@@ -32,13 +32,17 @@ function myFunction(){
     else{
         alert("The item is not added");
     }
-    
+   
 }
-var grades=[12,12,12,12,12,12];
+var grades=[12,,,2,3,12];
 var sum=0;
+var count=0;
 if(grades.length!=0){
     for(j=0;j<grades.length;j++){
-        sum+=grades[j];
+        if(grades[j]!=undefined){
+            sum+=grades[j];
+            count++;
+        }
     }
-    document.write(sum/grades.length);
+    document.write(sum/count);
 }

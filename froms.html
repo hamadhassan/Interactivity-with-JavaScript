@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <script src="js/forms.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Forms</h1>
+        <form action="">
+            <label for="name">Name :</label>
+            <input placeholder="Your good name" type="text" name="name" id="name">
+            <br>
+            <label for="email"> Enter Email : &nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="email-confirm">Confirm Email :</label>
+            <input type="email" name="email-confirm" id="email-confirm">
+            <br>
+            <label for="date">Date &nbsp;&nbsp;:</label>
+            <input type="date" name="date" id="date">
+            <br>
+            <label for="postalcode">Postal Code with pattern :</label>
+            <input pattern="[0-9]{5}" required type="text" name="poastalcode" id="postalcode">
+            <br>
+            <button onclick="return-valpas()" type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
