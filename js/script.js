@@ -25,12 +25,20 @@ document.getElementById("fruits").innerHTML=fruits;
 
 function myFunction(){
     var fruit=prompt("What is your favorite fruit?");
-    fruits[fruits.length]=fruit;
-    document.getElementById("fruits").innerHTML=fruits;
+    if(fruit.length!=0){
+        fruits[fruits.length]=fruit;
+        document.getElementById("fruits").innerHTML=fruits;
+    }
+    else{
+        alert("The item is not added");
+    }
+    
 }
 var grades=[12,12,12,12,12,12];
 var sum=0;
-for(j=0;j<grades.length;j++){
-    sum+=grades[j];
+if(grades.length!=0){
+    for(j=0;j<grades.length;j++){
+        sum+=grades[j];
+    }
+    document.write(sum/grades.length);
 }
-document.write(sum/grades.length);
