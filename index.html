@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
 </head>
-<body>
+<body onload="loadFruits()">
     <h1 id="test">Interactivity wih JavaScript</h1>
     <h2>Modify the DOM</h2>
     <section>
@@ -19,6 +19,10 @@
             <p  id="change" class="second">This will change.</p>
             <p class="third">This should't change either</p>
         </div>
+    </section>
+    <section>
+        <button onclick="myFunction()">Add your favorities</button>
+        <p id="fruits"></p>
     </section>
 
 </body>
